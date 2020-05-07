@@ -184,12 +184,12 @@ Here is a 240 character sample of the email body:
         
 The email was classified as {label} with a {probability} confidence """
         ses.send_email(
-            Destination={"ToAddresses": ["rj2571@columbia.edu",],},
+            Destination={"ToAddresses": ["xyz@columbia.edu",],},
             Message={
                 "Body": {"Text": {"Charset": "UTF-8", "Data": body,},},
                 "Subject": {"Charset": "UTF-8", "Data": subject,},
             },
-            Source="test@aws.ragvri.codes",
+            Source="test@domain.com",
         )
     except Exception as e:
         print(e)
